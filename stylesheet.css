@@ -12,8 +12,8 @@
 
 html {font-size:18px}
 
-body { font-family: Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2rem; font-weight: 400;
+body { font-family: 'Inter', serif;
+
     color: var(--text-color-darkmode);
     background: var(--background-color-dark);
     padding-top:1rem;
@@ -50,8 +50,6 @@ h2 {font-weight: 500;}
 
 li {padding:0.5rem 0;}
 
-
-
 .no-list {
     list-style-type: none;
     padding: 0;
@@ -83,6 +81,22 @@ h1 {
     h1 {font-size: 3rem;}
 }
 
+hr {
+    height: 1px;
+    color: #ed1d61;
+    background: #ed1d61;
+    font-size: 0;
+    border: 0;
+    max-width: 80%;
+}
+@media screen and (prefers-color-scheme: light) {
+    hr { background: var(--text-color-lightmode-secondary); }
+}
+@media screen and (prefers-color-scheme: dark) {
+    hr { background: var(--text-color-darkmode-secondary); }
+}
+
+.text-cardo {font-family: 'Cardo', serif;}
 .text-centered {text-align: center;}
 .text-xs {font-size:0.5rem;}
 .text-sm {font-size:0.8rem;}
@@ -90,7 +104,7 @@ h1 {
 .text-xl {font-size:7rem; font-weight:700;}
 .text-gradient {
     /* background: linear-gradient(45deg, #926,#16c,#084); */
-    background: linear-gradient(60deg, #d30a6f 10%, #d63200, #ffcb20 , #b775ec, #1f8ee9 90%);
+    background: linear-gradient(60deg, #d30a90 10%, #d63200, #ffcb20 , #c08bec, #6444f0, #355feb 90%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -140,11 +154,10 @@ footer {
     width:fit-content;
     margin:auto;
     text-align: center;
-    border-top: 1px solid 
 }
 @media screen and (prefers-color-scheme: light) {
-    footer { color: var(--text-color-lightmode-secondary);}
+    footer { color: var(--text-color-lightmode-secondary); }
 }
 @media screen and (prefers-color-scheme: dark) {
-    footer { color: var(--text-color-darkmode-secondary);}
+    footer { color: var(--text-color-darkmode-secondary); }
 }
