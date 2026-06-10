@@ -44,6 +44,9 @@ a:hover {color: var(--accent-color-secondary); -webkit-text-fill-color: initial;
 }
 a,a:hover {transition: all linear 0.25s;}
 
+h1 a { text-decoration: none;}
+h1 a:hover {color: inherit;}
+
 h1, h2, h3, h4, h5 {padding: 0; margin:1rem 0 1rem; text-decoration: none;}
 h1 { color: var(--main-accent-color);}
 h2 {font-weight: 500;}
@@ -80,6 +83,7 @@ h1 {
 @media (max-width: 370px) {
     h1 {font-size: 3rem;}
 }
+h2, h3 { font-family: "Cardo", serif;}
 
 hr {
     height: 1px;
@@ -138,6 +142,14 @@ span.redacted {
 }
 span.redacted:hover {
     color: inherit; background: none;
+}
+
+ul.poetry {
+    list-style-type: none;
+    padding: 0;
+}
+ul.poetry li{
+    padding: 0.5em 0;
 }
 
 .badge { 
