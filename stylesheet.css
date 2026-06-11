@@ -1,89 +1,141 @@
-:root {
-    --accent-color-primary: #4b88ce; 
-    --accent-color-secondary: #076ce9; 
-    --accent-color-tertiary: #d3a200; 
-    --text-color-darkmode: #cccccc;
-    --text-color-darkmode-secondary: #666666;
-    --text-color-lightmode: #252525;
-    --text-color-lightmode-secondary: #8f8f8f;
-    --background-color-dark: #222222;
-    --background-color-light:#e5e5e5;
+@import "palette.css";
+
+body {
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    color: var(--base-lighter);
+    background: var(--base-darkest);
+    padding-top: 1rem;
 }
 
-html {font-size:18px}
-
-body { font-family: 'Inter', serif;
-
-    color: var(--text-color-darkmode);
-    background: var(--background-color-dark);
-    padding-top:1rem;
-
-}
 @media screen and (prefers-color-scheme: light) {
     body {
-        background-color: var(--background-color-light);
-        color: var(--text-color-lightmode);
-    }   
+        background-color: var(--base-lightest);
+        color: var(--base-darker);
+    }
 }
+
 @media (max-width: 370px) {
-    body {font-size: 1rem;}
+    body {
+        font-size: 1rem;
+    }
 }
 
-.container {max-width: 40rem; margin:auto auto; padding:0 1rem;}
-
-p, ul, ol, h1, h2, h3, h4, h5, h6 {padding:0; margin:2rem 0; text-wrap: pretty;}
-p, li { line-height: 1.4em; }
-
-a {color: var(--accent-color-primary); text-decoration: underline; }
-@media screen and (prefers-color-scheme: light) {
-    a {color: var(--accent-color-primary);}    
+.container {
+    max-width: 40rem;
+    margin: auto auto;
+    padding: 0 1rem;
 }
-a:hover {color: var(--accent-color-secondary); -webkit-text-fill-color: initial;}
-@media screen and (prefers-color-scheme: light) {
-    a:hover {color: var(--accent-color-lightmode) }
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 2rem 0;
+    text-wrap: pretty;
 }
-a,a:hover {transition: all linear 0.25s;}
 
-h1 a { text-decoration: none;}
-h1 a:hover {color: inherit;}
+p,
+li {
+    line-height: 1.4em;
+}
 
-h1, h2, h3, h4, h5 {padding: 0; margin:1rem 0 1rem; text-decoration: none;}
-h1 { color: var(--main-accent-color);}
-h2 {font-weight: 500;}
+a {
+    color: var(--blue);
+    text-decoration: underline;
+}
 
-li {padding:0.5rem 0;}
+a:hover {
+    color: var(--ruby);
+    -webkit-text-fill-color: initial;
+}
+
+a,
+a:hover {
+    transition: all linear 0.25s;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 1rem 0 1rem;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--blue);
+}
+
+h2 {
+    font-weight: 500;
+}
+
+li {
+    padding: 0.5rem 0;
+}
 
 .no-list {
     list-style-type: none;
     padding: 0;
 }
+
 .hlist {
-    margin: 1rem 0; padding:0;
+    margin: 1rem 0;
+    padding: 0;
     list-style-type: none;
     /* padding: 0; */
 }
+
 .hlist li {
     display: inline-block;
-    margin:0 1rem; padding: 0; 
+    margin: 0 1rem;
+    padding: 0;
 }
 
 h1 {
     font-family: "Cormorant", serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    font-size:7rem;
+    font-size: 7rem;
     font-style: normal;
     text-align: center;
     width: fit-content;
     margin: auto;
 }
+
 @media (max-width: 800px) {
-    h1 {font-size: 5rem;}
+    h1 {
+        font-size: 5rem;
+    }
 }
+
 @media (max-width: 370px) {
-    h1 {font-size: 3rem;}
+    h1 {
+        font-size: 3rem;
+    }
 }
-h2, h3 { font-family: "Cardo", serif;}
+
+h2,
+h3 {
+    font-family: "Cardo", serif;
+}
 
 hr {
     height: 1px;
@@ -93,83 +145,132 @@ hr {
     border: 0;
     max-width: 80%;
 }
+
 @media screen and (prefers-color-scheme: light) {
-    hr { background: var(--text-color-lightmode-secondary); }
-}
-@media screen and (prefers-color-scheme: dark) {
-    hr { background: var(--text-color-darkmode-secondary); }
+    hr {
+        background: var(--base-lighter);
+    }
 }
 
-.text-cardo {font-family: 'Cardo', serif;}
-.text-centered {text-align: center;}
-.text-xs {font-size:0.5rem;}
-.text-sm {font-size:0.8rem;}
-.text-lg {font-size:1.5rem; font-weight:400; }
-.text-xl {font-size:7rem; font-weight:700;}
+@media screen and (prefers-color-scheme: dark) {
+    hr {
+        background: var(--base-darker);
+    }
+}
+
+.text-cardo {
+    font-family: 'Cardo', serif;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-xs {
+    font-size: 0.5rem;
+}
+
+.text-sm {
+    font-size: 0.8rem;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.text-xl {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
 .text-gradient {
     /* background: linear-gradient(45deg, #926,#16c,#084); */
-    background: linear-gradient(60deg, #d30a90 10%, #d63200, #ffcb20 , #c08bec, #6444f0, #355feb 90%);
+    background: linear-gradient(60deg, #d30a90 10%, #d63200, #ffcb20, #c08bec, #6444f0, #355feb 90%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
+
 .text-dimmed {
-    opacity:0.5;
+    opacity: 0.5;
 }
-.text-nodecor { text-decoration: none;}
+
+.text-nodecor {
+    text-decoration: none;
+}
 
 .button {
     display: inline-block;
     border-radius: 0.5rem;
-    border:2px solid #fff;
-    padding:0.5rem 1rem;
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
     /* background: #16c;  */
-    color:#fff;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
 .button:hover {
-    background: #fff; 
-    color:#000;
+    background: #fff;
+    color: #000;
     mix-blend-mode: screen;
 }
 
-.icon-button {font-size:150%; transition: all linear 0.2s;}
-.icon-button:hover {text-shadow:rgba(255,255,255,0.7) 0 0 2px} 
+.icon-button {
+    font-size: 150%;
+    transition: all linear 0.2s;
+}
+
+.icon-button:hover {
+    text-shadow: rgba(255, 255, 255, 0.7) 0 0 2px
+}
 
 span.redacted {
-    color:#000; background:#000;
-    border: 1px solid #333; border-radius: 2px;
+    color: #000;
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 2px;
 }
+
 span.redacted:hover {
-    color: inherit; background: none;
+    color: inherit;
+    background: none;
 }
 
 ul.poetry {
     list-style-type: none;
     padding: 0;
 }
-ul.poetry li{
+
+ul.poetry li {
     padding: 0.5em 0;
 }
 
-.badge { 
-    display: inline-block; 
-    padding:0.25rem 0.5rem; 
-    border: 2px solid var(--text-color-darkmode-secondary); 
-    border-radius: 1rem; 
-    color: var(--text-color-darkmode-secondary); 
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid var(--text-color-darkmode-secondary);
+    border-radius: 1rem;
+    color: var(--text-color-darkmode-secondary);
     font-size: 0.8rem;
-    font-weight: 700;}
+    font-weight: 700;
+}
 
 footer {
     margin-top: 5vw;
-    width:fit-content;
-    margin:auto;
+    width: fit-content;
+    margin: auto;
     text-align: center;
 }
+
 @media screen and (prefers-color-scheme: light) {
-    footer { color: var(--text-color-lightmode-secondary); }
+    footer {
+        color: var(--base-light);
+    }
 }
+
 @media screen and (prefers-color-scheme: dark) {
-    footer { color: var(--text-color-darkmode-secondary); }
+    footer {
+        color: var(--base-dark);
+    }
 }

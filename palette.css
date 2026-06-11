@@ -1,0 +1,23 @@
+/* Cassandra's color palette v2026.01 */
+
+:root {
+    --base-darkest: hsl(0, 0%, 10%);
+    --base-darker: hsl(0, 0%, 25%);
+    --base-dark: hsl(0, 0%, 40%);
+    --base-mid: hsl(0, 0%, 50%) ;
+    --base-light: hsl(0, 0%, 60%) ;
+    --base-lighter: hsl(0, 0%, 75%) ;
+    --base-lightest: hsl(0, 0%, 90%);
+
+    --blue: hsl(212, 50%, 50%);
+    --blue-vivid: hsl(212, 100%, 50%);
+    --blue-light: hsl(212, 75%, 60%);
+    --blue-dark: hsl(212, 75%, 40%);
+    
+    --gold: hsl(41, 50%, 50%);
+    --gold-vivid: hsl(41, 100%, 50%);
+
+    --ruby: hsl(0, 50%, 50%);
+    --ruby-vivid: hsl(0, 95%, 50%);
+
+}
