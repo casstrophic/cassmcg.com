@@ -180,6 +180,26 @@ hr {
     font-weight: 700;
 }
 
+.text-red {
+    color: var(--ruby)
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-green {
+    color: var(--emerald);
+}
+
+.text-yellow {
+    color: var(--gold);
+}
+
+.text-purple {
+    color: var(--amethyst);
+}
+
 .text-gradient {
     /* background: linear-gradient(45deg, #926,#16c,#084); */
     background: linear-gradient(60deg, #d30a90 10%, #d63200, #ffcb20, #c08bec, #6444f0, #355feb 90%);

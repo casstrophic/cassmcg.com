@@ -20,4 +20,9 @@
     --ruby: hsl(0, 50%, 50%);
     --ruby-vivid: hsl(0, 95%, 50%);
 
+    --emerald: hsl(133, 44%, 50%);
+    --emerald-vivid: hsl(133, 90%, 40%);
+
+    --amethyst: hsl(271, 47%, 50%);
+    --amethyst-vivid: hsl(271, 89%, 49%);
 }
