@@ -162,6 +162,10 @@ hr {
     text-align: center;
 }
 
+.text-i, .text-italicised {
+    font-style: italic;
+}
+
 .text-xs {
     font-size: 0.5rem;
 }
@@ -251,6 +255,11 @@ span.redacted {
 span.redacted:hover {
     color: inherit;
     background: none;
+}
+
+.commentary {
+    border-left: .25rem solid var(--base-mid);
+    padding-left: 1rem
 }
 
 ul.poetry {
