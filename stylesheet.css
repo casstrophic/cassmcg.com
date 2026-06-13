@@ -282,6 +282,110 @@ ul.poetry li {
     font-weight: 700;
 }
 
+/* Cover grids */
+.cover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(10em auto);
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.cover-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.cover {
+    display: block;
+    position: relative;
+    border: 1px solid #ed1d61;
+    text-align: center;
+    text-decoration: none;
+    height: 15rem;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: all 0.5s linear;
+}
+
+.cover h2 {
+    min-height: 8rem;
+    transition: all 0.5s linear;
+
+}
+
+.cover p {
+    display: block;
+    font-style: italic;
+    margin: 0;
+    transition: all 0.5s linear;
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .cover {
+        color: var(--base-light);
+        border-color: var(--base-darker);
+        box-shadow: inset 0 0 .5em var(--base-darker);
+    }
+
+    .cover:hover {
+        border-color: var(--gold);
+        box-shadow: inset 0 0 1em var(--gold);
+    }
+
+    .cover h2 {
+        color: var(--gold);
+    }
+
+    .cover:hover h2 {
+        color: var(--gold-vivid);
+    }
+
+    .cover p {
+        color: var(--base-dark)
+    }
+
+    .cover:hover p {
+        color: var(--base-light)
+    }
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .cover {
+        border-color: var(--base-lighter);
+        box-shadow: inset 0 0 .5em var(--base-lighter);
+    }
+
+    .cover:hover {
+        border-color: var(--amethyst);
+        box-shadow: inset 0 0 1em var(--amethyst);
+    }
+
+    .cover h2 {
+        color: var(--amethyst);
+    }
+
+    .cover:hover h2 {
+        color: var(--amethyst-vivid);
+    }
+
+    .cover p {
+        color: var(--base-light)
+    }
+
+    .cover:hover p {
+        color: var(--base-dark)
+    }
+}
+
+
+/* Footer */
 footer {
     border-top: 1px solid #d30a90;
     width: fit-content;
