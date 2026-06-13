@@ -162,7 +162,8 @@ hr {
     text-align: center;
 }
 
-.text-i, .text-italicised {
+.text-i,
+.text-italicised {
     font-style: italic;
 }
 
@@ -282,20 +283,23 @@ ul.poetry li {
 }
 
 footer {
-    margin-top: 5vw;
+    border-top: 1px solid #d30a90;
     width: fit-content;
-    margin: auto;
+    min-width: 20rem;
+    margin: 2em auto 0;
     text-align: center;
 }
 
 @media screen and (prefers-color-scheme: light) {
     footer {
         color: var(--base-light);
+        border-color: var(--base-lighter);
     }
 }
 
 @media screen and (prefers-color-scheme: dark) {
     footer {
         color: var(--base-dark);
+        border-color: var(--base-darker);
     }
 }
