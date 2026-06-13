@@ -61,6 +61,38 @@ a:hover {
     transition: all linear 0.25s;
 }
 
+.site-title {
+    display: block;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 7rem;
+    font-style: normal;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    background: linear-gradient(60deg, #d30a90 10%, #d63200, #ffcb20, #c08bec, #6444f0, #355feb 90%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.site-title:hover {
+    color: transparent !important;
+}
+
+@media (max-width: 800px) {
+    .site-title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .site-title {
+        font-size: 3rem;
+    }
+}
+
 h1 a {
     text-decoration: none;
 }
@@ -69,17 +101,15 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
+    font-family: "Cardo", serif;
     padding: 0;
-    margin: 1rem 0 1rem;
+    margin: 3rem 0 1rem;
     text-decoration: none;
 }
 
-h1 {
-    color: var(--blue);
-}
-
-h2 {
+h1, h2, h3 {
     font-weight: 500;
 }
 
@@ -105,33 +135,6 @@ li {
     padding: 0;
 }
 
-h1 {
-    font-family: "Cormorant", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: 7rem;
-    font-style: normal;
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-}
-
-@media (max-width: 800px) {
-    h1 {
-        font-size: 5rem;
-    }
-}
-
-@media (max-width: 370px) {
-    h1 {
-        font-size: 3rem;
-    }
-}
-
-h2,
-h3 {
-    font-family: "Cardo", serif;
-}
 
 hr {
     height: 1px;
@@ -213,8 +216,9 @@ hr {
     -webkit-background-clip: text;
 }
 
+.text-dim,
 .text-dimmed {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .text-nodecor {
@@ -259,8 +263,8 @@ span.redacted:hover {
 }
 
 .commentary {
-    border-left: .25rem solid var(--base-mid);
-    padding-left: 1rem
+    opacity: 0.7;
+    font-style: italic;
 }
 
 ul.poetry {
@@ -295,9 +299,8 @@ ul.poetry li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    gap: 1em;
-    margin-bottom: 1em;
+    gap: 1rem;
+    margin: 1rem auto;
 }
 
 .cover {
@@ -316,7 +319,7 @@ ul.poetry li {
 .cover h2 {
     min-height: 8rem;
     transition: all 0.5s linear;
-
+    margin: 1em 0;
 }
 
 .cover p {
@@ -324,7 +327,6 @@ ul.poetry li {
     font-style: italic;
     margin: 0;
     transition: all 0.5s linear;
-
 }
 
 @media screen and (prefers-color-scheme: dark) {
