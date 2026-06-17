@@ -138,6 +138,9 @@ li {
     padding: 0;
 }
 
+.hlist li a {
+    text-decoration: none;
+}
 
 hr {
     height: 1px;
