@@ -195,7 +195,7 @@ hr {
 }
 
 .text-red {
-    color: var(--ruby)
+    color: var(--ruby);
 }
 
 .text-blue {
@@ -326,19 +326,21 @@ ul.poetry li {
 }
 
 /* Cover grids */
-.cover-grid {
+.covers-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(10em auto);
-    gap: 1em;
+    grid-auto-flow: row;
+    /* grid-auto-rows: minmax(10em auto); */
+    gap: 1.5em;
     margin-bottom: 1em;
 }
 
 .covers-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 1.6em;
     margin: 1rem auto;
 }
 
